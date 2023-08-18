@@ -1,0 +1,14 @@
+copy-btn {
+    position: fixed;
+    z-index: 9999;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    left: -100px;
+}
+
+.custom-image {
+    width: 16px;
+    height: 16px;
+}

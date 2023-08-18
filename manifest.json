@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Task Title Copier",
+  "version": "0.1.0",
+  "description": "Copy the title of a task on Jira",
+  "permissions": [
+    "storage",
+    "clipboardWrite",
+    "tabs",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "https://amanotesjsc.atlassian.net/*" ], 
+      "js": [ "contentScripts.js" ]
+    }
+  ],
+  "icons": {
+    "32": "asset/icon.png"
+  }
+}
