@@ -1,9 +1,10 @@
 
 
 
+
 function GetTaskType() {
     var taskType = document.querySelector('[data-testid="issue.views.issue-base.foundation.change-issue-type.tooltip--container"]');
-    var input = taskType.firstChild.firstChild.alt;
+    var input = taskType.firstChild.firstChild.childNodes[0].alt;
     let result;
     switch (input) {
         case "Task":
