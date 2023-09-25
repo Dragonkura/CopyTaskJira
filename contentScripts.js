@@ -74,7 +74,7 @@ document.body.onanimationend = () => {
 }
 
 function CheckAndCreateButton() {
-    const websitePattern = ['https://amanotesjsc.atlassian.net/jira/software/c/projects/GSG/boards/*?modal=detail&selectedIssue=*', 'https://amanotesjsc.atlassian.net/browse/GSG-*'];
+    const websitePattern = ['https://amanotesjsc.atlassian.net/jira/software/c/projects/GSG/boards/*?modal=detail&selectedIssue=*', 'https://amanotesjsc.atlassian.net/browse/GSG-*','https://amanotesjsc.atlassian.net/jira/software/c/projects/GSG/boards/*'];
     for (var i = 0; i < websitePattern.length; i++) {
         if (matchPattern(document.URL, websitePattern[i])) {
             const copyBtnExits = document.getElementsByClassName("copy-btn")[0];
