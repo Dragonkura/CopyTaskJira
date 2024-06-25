@@ -38,6 +38,14 @@ async function  SaveToClipBoard(copyText) {
     // Alert the copied text
     alert("Copied the text: " + copyText);
 }
+async function UpdateIssue(issueId) {
+
+    // Copy the text inside the text field
+    await navigator.clipboard.writeText(copyText);
+
+    // Alert the copied text
+    alert("Copied the text: " + copyText);
+}
 async function CreateButton() {
     const titleClass = document.querySelector('[data-testid="issue.views.issue-details.issue-layout.left-most-column"]');
     var title = titleClass.childNodes[2];
